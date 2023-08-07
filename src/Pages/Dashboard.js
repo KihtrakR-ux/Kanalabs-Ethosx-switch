@@ -7,9 +7,10 @@ import downleftarrow from "../assets/icons/downleftarrow.svg";
 import Downarrow from "../assets/icons/Downarrow.svg";
 import linechart from "../assets/icons/linechart.svg";
 import Graphic from "./Component/Graphic";
-import Sparklinechart from "./Component/Sparklinechart";
+// import Sparklinechart from "./Component/Sparklinechart";
 import { TECollapse, TERipple } from "tw-elements-react";
 import { useState } from "react";
+import imgchart from "../assets/icons/imgchart.svg";
 const Dashboard = () => {
   const [show, setShow] = useState(false);
 
@@ -435,10 +436,16 @@ const Dashboard = () => {
               <div>
                 <div className="flex justify-between text-[0.875rem] text-[white] h-[3.5rem] w-auto border-[#2f3033] border-b-2 p-[3%_6%]">
                   <div>Previous Cycle returns</div>
+
                   <img src={instruction} alt="/instruction" className=" pl-2" />
                 </div>
                 <div>
-                  <Sparklinechart />
+                  {/* <Sparklinechart /> */}
+                  <img
+                    src={imgchart}
+                    alt="/"
+                    className="w-[35rem] h-[15.813rem]"
+                  />
                 </div>
               </div>
             </div>

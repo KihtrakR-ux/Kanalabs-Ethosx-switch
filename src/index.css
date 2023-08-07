@@ -48,7 +48,8 @@ body {
 }
 
 .button-gradient {
-  border-image: linear-gradient(to right, #4f9dff, #67ffd1) 1;
   border-radius: 16px !important;
-  border-bottom-color: #4f9dff;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, #4f9dff, #67ffd1);
+  border-image-slice: 1;
 }
